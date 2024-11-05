@@ -5,16 +5,18 @@ public class Alunos {
     private int matricula;
     private String nome;
     private String cpf;
+    private String telefone;
     private String rg;
     private String dt_nascimento;
     private String nome_mae;
     private String nome_pai;
     private String endereco;
 
-    public Alunos(int matricula, String nome, String cpf, String rg, String dt_nascimento, String nome_mae, String nome_pai, String endereco) {
+    public Alunos(int matricula, String nome, String cpf,String telefone ,String rg, String dt_nascimento, String nome_mae, String nome_pai, String endereco) {
         this.matricula = matricula;
         this.nome = nome;
         this.cpf = cpf;
+        this.telefone = telefone;
         this.rg = rg;
         this.dt_nascimento = dt_nascimento;
         this.nome_mae = nome_mae;
@@ -48,6 +50,14 @@ public class Alunos {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
+    }
+    
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 
     public String getRg() {
